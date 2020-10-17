@@ -35,3 +35,4 @@ def send_mail(tittle, price):
     conn.ehlo()
     conn.login(email, password)
     conn.sendmail('from@gmail.com', 'to@gmail.com', f'Subject: {tittle}\n\n The {tittle} is R${price}\n{URL}')
+    conn.quit()
